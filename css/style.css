@@ -58,11 +58,12 @@ Header Section Code Start
     height: 51px;
 } 
 
-/* MEDIA QUERY FOR HEADER CODE START */
+ /*----------------------------
+  HEADER MEDIA QUERY CODE START HERE-----------------------*/
 
 
 @media (max-width: 480px)  {
-  
+
     .header-container {
         padding: 5%;
         display: flex;
@@ -71,7 +72,7 @@ Header Section Code Start
 
     .header-navber .logo {
         width: 20.42px;
-        height: 30px;
+        height: 25px;
         margin-right: auto;
     }
 
@@ -92,11 +93,260 @@ Header Section Code Start
     
   }
 
+ /*  */
 
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    .header-container {
+        padding: 20%;
+        display: flex;
+        justify-content: center;
+    }
 
+    .header-navber .logo {
+        width: 30.42px;
+        height: 35px;
+        margin-right: auto;
+    }
 
-/* MEDIA QUERY FOR HEADER CODE END */
+    .header-container .login-image {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    } 
+
+    .navber ul li {
+        margin: 0 5px;
+    }
+
+    .navber ul li a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+  }
+
+  /* */
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    .header-container {
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-navber .logo {
+        width: 30.42px;
+        height: 35px;
+        margin-right: auto;
+    }
+
+    .header-container .login-image {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    } 
+
+    .navber ul li {
+        margin: 0 5px;
+    }
+
+    .navber ul li a {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+  }
+
+/*----------------------------
+HEADER MEDIA QUERY CODE END HERE-----------------------*/
 
 /*********************************** 
 Header Section Code End
+********************************* */
+
+/*********************************** 
+MAIN SECTION CODE START
+********************************* */
+
+.main-section {
+    margin-top: 36px;
+}
+.main-container {
+    width: 870px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 30px;
+    border-radius: 5px;
+}
+
+.top-players-title {
+    padding-bottom: 40px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 29px;
+    column-gap: 119px;
+}
+
+
+.players-inner {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.top-players-title h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+}
+
+.players img {
+    width: 56px;
+    height: 56px;
+}
+
+.players h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+
+/*******top-players-line**********/
+
+.top-players-line {
+    margin: 30px 0;
+    color: #D1D1D1;
+    background-color: #D1D1D1;
+}
+
+
+/* Top Blog Start */
+
+
+
+.top-blog-title h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+}
+
+.top-blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 31px;
+    margin-bottom: 12px;
+    row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.blog img {
+    width: 177px;
+    height: 117px;
+    margin-right: 16px;
+}
+
+.blog-inner h2 {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.blog-inner p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+
+span {
+    color: #562EFF;
+}
+
+
+
+/* Top Blog End */
+
+/*----------------------------------
+TOP PLAYERS & TOP BLOG MEDIA QUERY CODE START HERE-----------------------*/
+
+@media (max-width: 480px)  {
+    
+
+    .main-container {
+        width: 100%;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 29px;
+        column-gap: 119px;
+    }
+
+    .top-players-title h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+
+    .top-blog {
+        display: none;
+    }
+
+    .players-inner {
+        display: block;
+        text-align: center;
+        align-items: center;
+        padding: 60px;
+        border-radius: 10px;
+        background: #e0e0e0;
+box-shadow:  29px 29px 59px #d9d9d9,
+             -29px -29px 59px #e7e7e7;
+    }
+
+    .blog img {
+        margin-right: 0px;
+    }
+
+    .players h3 {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    
+  }
+
+ /*  */
+
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    
+
+  }
+
+  /* */
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+   
+    
+  }
+
+
+
+/*----------------------------------
+TOP PLAYERS & TOP BLOG MEDIA QUERY CODE END HERE-----------------------*/
+
+
+/*********************************** 
+MAIN SECTION CODE END
 ********************************* */
