@@ -79,6 +79,10 @@ Header Section Code Start
         display: inline-block;
         margin-right: 0px;
     }
+
+    .navber ul li a {
+        font-size: 12px;
+    }
     
   }
 
@@ -105,7 +109,7 @@ Header Section Code Start
 
   /* */
 
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  @media (min-width: 768px) and (max-width: 1024px) {
   
     .header-container {
         width: 100%;
@@ -292,8 +296,8 @@ TOP PLAYERS & TOP BLOG MEDIA QUERY CODE START HERE-----------------------*/
     }
 
     .blog img {
-        width: 368px;
-        height: 248px;
+        width: 308px;
+        height: 166px;
         margin-right: 0px;
     }
     
@@ -359,7 +363,7 @@ TOP PLAYERS & TOP BLOG MEDIA QUERY CODE START HERE-----------------------*/
 
   /* */
 
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  @media (min-width: 768px) and (max-width: 1024px) {
   
     .main-container {
         width: 80%;
@@ -420,6 +424,223 @@ TOP PLAYERS & TOP BLOG MEDIA QUERY CODE START HERE-----------------------*/
 
 /*----------------------------------
 TOP PLAYERS & TOP BLOG MEDIA QUERY CODE END HERE-----------------------*/
+
+/* *********************** */
+
+
+/* Latest Course Start****** */
+
+
+.latest-course-section {
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 30px;
+}
+.latest-course-container {
+    width: 870px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 30px;
+    border-radius: 5px;
+}
+
+.latest-course-title {
+    padding-bottom: 20px;
+}
+
+.latest-course-title h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+}
+
+.latest-course-cardbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 53px;
+}
+
+.latest-course-cardbox img {
+    width: 60px;
+    height: 60px;
+}
+
+.latest-course-card-inner {
+    padding: 10px 0 20px 10px;
+    border-radius: 10px;
+    box-shadow:  13px 13px 16px #f7f7f7,
+             -13px -13px 16px #ffffff;
+
+}
+
+.latest-course-card-inner img {
+    Width: 234px;
+    Height: 114px;
+}
+
+.latest-course-card-inner h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.latest-course-card-inner p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ED6B4F;
+    margin-bottom: 20px;
+}
+
+.rating-star {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fa-star {
+    color: #FFC014;
+    font-size: 12px;
+}
+
+.empty-star {
+    color: #AEAEAE;
+}
+
+.rate {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #A2A2A2;
+}
+
+.rate-btn {
+    padding: 3px 10px;
+    background-color: #FFE4E8;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.rate-btn a {
+    color: #FF4A60;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fa-clock {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* Latest Course End ****** */
+
+
+
+/*----------------------------------
+LATEST COURSE MEDIA QUERY CODE START HERE-----------------------*/
+
+@media (max-width: 480px)  {
+
+    .latest-course-container {
+        width: 80%;
+    }
+    
+    .latest-course-cardbox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+
+    .latest-course-title h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .latest-course-card-inner {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .latest-course-card-inner {
+        padding: 58px;
+        text-align: center;
+    }
+
+    
+  }
+
+ /*  */
+
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    .latest-course-container {
+        width: 80%;
+    }
+    
+    .latest-course-cardbox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+
+    .latest-course-title h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .latest-course-card-inner {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .latest-course-card-inner {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .rating-star {
+        justify-content: center;
+    }
+
+  }
+
+  /* */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    .latest-course-container {
+        width: 80%;
+    }
+    
+    .latest-course-cardbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0px;
+    }
+
+    .latest-course-title h1 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .latest-course-card-inner {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .latest-course-card-inner {
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }  
+    
+    .rating-star {
+        justify-content: center;
+    }
+   
+    
+  }
+
+
+
+/*----------------------------------
+LATEST COURSE MEDIA QUERY CODE END HERE-----------------------*/
 
 
 /*********************************** 
