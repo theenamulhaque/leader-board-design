@@ -64,31 +64,20 @@ Header Section Code Start
 
 @media (max-width: 480px)  {
 
+
     .header-container {
-        padding: 5%;
-        display: flex;
-        justify-content: center;
+        width: 100%;
+        padding: 0 5%;
     }
 
-    .header-navber .logo {
-        width: 20.42px;
-        height: 25px;
-        margin-right: auto;
+    .navber {
+        margin-right: 20px;
     }
-
-    .header-container .login-image {
-        width: 30px;
-        height: 30px;
-        margin-left: 5px;
-    } 
 
     .navber ul li {
-        margin: 0 5px;
-    }
-
-    .navber ul li a {
-        font-size: 12px;
-        font-weight: 400;
+        list-style: none;
+        display: inline-block;
+        margin-right: 0px;
     }
     
   }
@@ -98,30 +87,18 @@ Header Section Code Start
   @media (min-width: 481px) and (max-width: 767px) {
   
     .header-container {
-        padding: 20%;
-        display: flex;
-        justify-content: center;
+        width: 100%;
+        padding: 0 5%;
     }
 
-    .header-navber .logo {
-        width: 30.42px;
-        height: 35px;
-        margin-right: auto;
+    .navber {
+        margin-right: 20px;
     }
-
-    .header-container .login-image {
-        width: 40px;
-        height: 40px;
-        margin-left: 5px;
-    } 
 
     .navber ul li {
-        margin: 0 5px;
-    }
-
-    .navber ul li a {
-        font-size: 14px;
-        font-weight: 400;
+        list-style: none;
+        display: inline-block;
+        margin-right: 0px;
     }
 
   }
@@ -131,32 +108,20 @@ Header Section Code Start
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
     .header-container {
-        padding: 5%;
-        display: flex;
-        justify-content: center;
+        width: 100%;
+        padding: 0 5%;
     }
 
-    .header-navber .logo {
-        width: 30.42px;
-        height: 35px;
-        margin-right: auto;
+    .navber {
+        margin-right: 20px;
     }
-
-    .header-container .login-image {
-        width: 40px;
-        height: 40px;
-        margin-left: 5px;
-    } 
 
     .navber ul li {
-        margin: 0 5px;
+        list-style: none;
+        display: inline-block;
+        margin-right: 0px;
     }
 
-    .navber ul li a {
-        font-size: 14px;
-        font-weight: 400;
-    }
-    
   }
 
 /*----------------------------
@@ -171,6 +136,7 @@ MAIN SECTION CODE START
 ********************************* */
 
 .main-section {
+    width: 100%;
     margin-top: 36px;
 }
 .main-container {
@@ -281,46 +247,8 @@ TOP PLAYERS & TOP BLOG MEDIA QUERY CODE START HERE-----------------------*/
 
 @media (max-width: 480px)  {
     
-
-    .main-container {
-        width: 100%;
-    }
-
-    .players {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 29px;
-        column-gap: 119px;
-    }
-
-    .top-players-title h1 {
-        font-size: 24px;
-        text-align: center;
-    }
-
-
-    .top-blog {
+    .main-section {
         display: none;
-    }
-
-    .players-inner {
-        display: block;
-        text-align: center;
-        align-items: center;
-        padding: 60px;
-        border-radius: 10px;
-        background: #e0e0e0;
-box-shadow:  29px 29px 59px #d9d9d9,
-             -29px -29px 59px #e7e7e7;
-    }
-
-    .blog img {
-        margin-right: 0px;
-    }
-
-    .players h3 {
-        margin-left: 0px;
-        margin-top: 20px;
     }
     
   }
@@ -329,7 +257,9 @@ box-shadow:  29px 29px 59px #d9d9d9,
 
   @media (min-width: 481px) and (max-width: 767px) {
   
-    
+    .main-section {
+        display: none;
+    }
 
   }
 
@@ -338,7 +268,9 @@ box-shadow:  29px 29px 59px #d9d9d9,
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
    
-    
+    .main-section {
+        display: none;
+    }
   }
 
 
