@@ -193,20 +193,18 @@ MAIN SECTION CODE START
 
 /* Top Blog Start */
 
-
-
-.top-blog-title h1 {
-    font-size: 24px;
-    font-weight: 500;
-    color: #562EFF;
-}
-
 .top-blog-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 31px;
     margin-bottom: 12px;
     row-gap: 26px;
+}
+
+.top-blog-title h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
 }
 
 .blog {
@@ -247,8 +245,56 @@ TOP PLAYERS & TOP BLOG MEDIA QUERY CODE START HERE-----------------------*/
 
 @media (max-width: 480px)  {
     
-    .main-section {
-        display: none;
+    .main-container {
+        width: 80%;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 29px;
+        column-gap: 119px;
+    }
+
+    .top-players-title h1 {
+        text-align: center;
+    }
+
+    .players-inner {
+        display: block;
+        text-align: center;
+        padding: 30px 40px;
+        box-shadow: 29px 29px 59px #d9d9d9, -29px -29px 59px #e7e7e7;
+        border-radius: 10px;
+    }
+
+    .players h3 {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    /* Blog top */
+
+    .top-blog-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* width: 80%; */
+    }
+
+    .top-blog-title h1 {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .blog {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .blog img {
+        width: 368px;
+        height: 248px;
+        margin-right: 0px;
     }
     
   }
@@ -257,8 +303,56 @@ TOP PLAYERS & TOP BLOG MEDIA QUERY CODE START HERE-----------------------*/
 
   @media (min-width: 481px) and (max-width: 767px) {
   
-    .main-section {
-        display: none;
+    .main-container {
+        width: 80%;
+    }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 29px;
+        column-gap: 20px;
+    }
+
+    .top-players-title h1 {
+        text-align: center;
+    }
+
+    .players-inner {
+        display: block;
+        text-align: center;
+        padding: 30px 40px;
+        box-shadow: 29px 29px 59px #d9d9d9, -29px -29px 59px #e7e7e7;
+        border-radius: 10px;
+    }
+
+    .players h3 {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    /* Blog top */
+
+    .top-blog-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* width: 80%; */
+    }
+
+    .top-blog-title h1 {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .blog {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .blog img {
+        width: 368px;
+        height: 248px;
+        margin-right: 0px;
     }
 
   }
@@ -267,10 +361,59 @@ TOP PLAYERS & TOP BLOG MEDIA QUERY CODE START HERE-----------------------*/
 
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
-   
-    .main-section {
-        display: none;
+    .main-container {
+        width: 80%;
     }
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 29px;
+        column-gap: 20px;
+    }
+
+    .top-players-title h1 {
+        text-align: center;
+    }
+
+    .players-inner {
+        display: block;
+        text-align: center;
+        padding: 30px 40px;
+        box-shadow: 29px 29px 59px #d9d9d9, -29px -29px 59px #e7e7e7;
+        border-radius: 10px;
+    }
+
+    .players h3 {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    /* Blog top */
+
+    .top-blog-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* width: 80%; */
+    }
+
+    .top-blog-title h1 {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .blog {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    .blog img {
+        width: 177px;
+        height: 117px;
+        margin-right: 0px;
+    }
+   
+    
   }
 
 
